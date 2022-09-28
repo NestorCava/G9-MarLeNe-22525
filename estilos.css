@@ -33,11 +33,6 @@ body {
     background-color: #afd6af;
   }
   
-  .sidebar {
-    grid-area: sidebar;
-    background-color: #fdcfcf;
-  }
-  
   .main {
     grid-area: main;
     background-color: #f5f5f5;
@@ -55,7 +50,6 @@ body {
         "header" 100px
         "navbar" 50px
         "main" auto
-        "sidebar" 100px
         "footer" 100px;
 }
 
@@ -64,7 +58,7 @@ body {
         grid-template:
             "header  header" 100px
             "navbar  navbar" 50px
-            "sidebar main" auto
+            "main" auto
             "footer  footer" 100px /
             200px auto;
     }
@@ -74,7 +68,7 @@ body {
     .grid-container {
       grid-template:
         "header  header header"  100px
-        "navbar  main   sidebar" auto
+        "navbar  main" auto
         "footer  footer footer"  100px /
         200px    auto   200px;
     }
