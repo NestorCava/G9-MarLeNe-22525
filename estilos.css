@@ -23,16 +23,20 @@ body {
     text-align: center;
 }
 
-.header {
-    grid-area: header;
-    background-color: #85aedd;
-  }
+.header{
+  display: flex;
+  min-height: 70px;
+  background-color: mediumpurple;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
   
   .navbar {
     grid-area: navbar;
     background-color: #afd6af;
   }
-  
+
   .main {
     grid-area: main;
     background-color: #f5f5f5;
@@ -51,6 +55,30 @@ body {
         "navbar" 50px
         "main" auto
         "footer" 100px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 70px;
+  margin-right: 0px;
+}
+
+nav a{
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover{
+  color: indigo;
 }
 
 @media (min-width: 600px) {
