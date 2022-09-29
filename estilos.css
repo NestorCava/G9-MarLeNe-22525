@@ -84,7 +84,7 @@ nav a:hover{
 .slider{
   background-image: url(img/50520-laboratorio-clinico.jpg);
   background-size: cover;
-  height: 60%;
+  height: 65%;
   width: 100%;
   animation: animate 35s infinite;
 }
