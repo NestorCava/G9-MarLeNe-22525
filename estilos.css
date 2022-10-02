@@ -26,11 +26,20 @@ body {
 .header {
     grid-area: header;
     background-color: #85aedd;
+
+    /*Flex Property*/
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
   }
   
   .navbar {
     grid-area: navbar;
     background-color: #afd6af;
+
   }
 
   .sidebar {
@@ -63,6 +72,8 @@ body {
     list-style-type: none;
     display: inline;
     padding-right: 5px;
+
+    font-size: 0.8em;
   }
 
 @media (min-width: 600px) {
