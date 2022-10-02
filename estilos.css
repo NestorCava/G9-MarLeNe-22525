@@ -24,8 +24,9 @@ body {
 }
 
 .header {
+    height: 70px;
     grid-area: header;
-    background-color: #85aedd;
+    background-color: #33075770;
 
     /*Flex Property*/
     display: inline-flex;
@@ -35,13 +36,22 @@ body {
     align-items: flex-start;
     
   }
-  
-  .navbar {
-    grid-area: navbar;
-    background-color: #afd6af;
-
+  .logo{
+    width: 15%;
   }
 
+  .navbar {
+    grid-area: navbar;
+    width: 75%;
+    align-self: flex-end;
+    /*background-color: #afd6af;*/
+    
+
+  }
+  
+  .icono-lupa{
+    align-self: flex-end;
+  }
   .sidebar {
     grid-area: sidebar;
     background-color: #fdcfcf;
@@ -71,7 +81,7 @@ body {
 #menu-header li{
     list-style-type: none;
     display: inline;
-    padding-right: 5px;
+    padding-right: 20px;
 
     font-size: 0.8em;
   }
