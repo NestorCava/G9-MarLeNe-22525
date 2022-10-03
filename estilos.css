@@ -66,6 +66,13 @@ body {
   .footer {
     grid-area: footer;
     background-color: #33075770;
+
+    /*Flex Property*/
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
 .grid-container {
@@ -81,7 +88,7 @@ body {
                 "header header header header header header header header header header header header"
                 "main main main main main main main main main sidebar sidebar sidebar"
                 "footer footer footer footer footer footer footer footer footer footer footer footer";
-    grid-template-rows: 10% 70% 20%;
+    grid-template-rows: 10% 65% 25%;
 }
 
 #menu-header li{
@@ -90,6 +97,18 @@ body {
     padding-right: 20px;
 
     font-size: 1em;
+  }
+
+  .cabecera-footer{
+    font-size: 0.7em;
+    color: rgb(1, 13, 43);
+    text-align: left;
+  }
+
+  .text-footer{
+    font-size: 0.6em;
+    color: rgb(68, 67, 67);
+    text-align: left;
   }
 /* 
 @media (min-width: 600px) {
