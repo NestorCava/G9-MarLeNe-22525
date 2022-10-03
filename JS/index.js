@@ -1,20 +1,19 @@
 let idNavbar = `
-    <nav id="nav-bar">
     <ol>
       <li class="nav-link">
-        <a href="./home.html">Home</a>
+        <a href="./index.html">Inicio</a>
       </li>
       
       <li class="nav-link">
-        <a href="./nosotros.html">Nosotros</a>
+        <a href="./sedes.html">Sedes</a>
       </li>
       
       <li class="nav-link">
-        <a href="./indicaciones.html">Indicaciones</a>        
+        <a href="./informacion.html">Información</a>        
       </li>
 
       <li class="nav-link">
-        <a href="./contacto">Contacto</a>        
+        <a href="./contacto.html">Contacto</a>        
       </li>
     </ol>
   </nav>
