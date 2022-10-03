@@ -24,7 +24,7 @@ body {
 }
 
 .header {
-    height: 70px;
+    /* height: 70px; */
     grid-area: header;
     background-color: #33075770;
 
@@ -37,20 +37,21 @@ body {
     
   }
   .logo{
-    width: 15%;
+    height: 10%;
+    width: 10%;
   }
 
   .navbar {
-    grid-area: navbar;
+    /* grid-area: navbar; */
     width: 75%;
-    align-self: flex-end;
+    align-self: center;
     /*background-color: #afd6af;*/
     
 
   }
   
   .icono-lupa{
-    align-self: flex-end;
+    align-self: center;
   }
   .sidebar {
     grid-area: sidebar;
@@ -64,18 +65,23 @@ body {
   
   .footer {
     grid-area: footer;
-    background-color: #8c96a0;
+    background-color: #33075770;
   }
 
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-template: 
+    /* grid-template: 
         "header" 100px
-        "navbar" 50px
-        "main" auto
+        /*"navbar" 50px*/
+    /*    "main" auto
         "sidebar" 100px
-        "footer" 100px;
+        "footer" 100px; */
+      grid-template-areas: 
+                "header header header header header header header header header header header header"
+                "main main main main main main main main main sidebar sidebar sidebar"
+                "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-rows: 10% 70% 20%;
 }
 
 #menu-header li{
@@ -83,9 +89,9 @@ body {
     display: inline;
     padding-right: 20px;
 
-    font-size: 0.8em;
+    font-size: 1em;
   }
-
+/* 
 @media (min-width: 600px) {
     .grid-container {
         grid-template:
@@ -105,4 +111,4 @@ body {
         "footer  footer footer"  100px /
         200px    auto   200px;
     }
-}
+} */
