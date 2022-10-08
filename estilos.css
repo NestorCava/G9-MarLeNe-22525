@@ -40,6 +40,25 @@ body {
   .footer {
     grid-area: footer;
     background-color: mediumpurple;
+
+    /*Flex Property*/
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .cabecera-footer{
+    font-size: 0.7em;
+    color: rgb(1, 13, 43);
+    text-align: left;
+  }
+
+  .text-footer{
+    font-size: 0.6em;
+    color: rgb(68, 67, 67);
+    text-align: left;
   }
 
 .grid-container {
