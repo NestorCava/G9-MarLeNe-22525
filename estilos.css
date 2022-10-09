@@ -61,6 +61,10 @@ body {
     text-align: left;
   }
 
+  .text-footer>img{
+    height: 12px;
+  }
+
 .grid-container {
     display: grid;
     gap: 10px;
