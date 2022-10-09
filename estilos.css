@@ -219,6 +219,18 @@ nav a:hover{
   }
 }
 
+.logo-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lab h1{
+  color: indigo;
+  font-size: 50px;
+  font-weight: bold;
+}
+
 .sede-centro img{
   width: 600px;
 }
