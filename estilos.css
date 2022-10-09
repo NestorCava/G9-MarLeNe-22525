@@ -40,6 +40,12 @@ body {
   .footer {
     grid-area: footer;
     background-color: mediumpurple;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
   }
 
 .grid-container {
@@ -221,6 +227,34 @@ nav a:hover{
   width: 600px;
 }
 
+
+.social img{
+  height: 70px;
+  padding: 0;
+}
+
+.cabecera-footer{
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(1, 3, 10);
+  text-align: left;
+}
+
+.cabecera-footer a{
+  text-align: center;
+}
+
+.cabecera-footer a:hover{
+  color: indigo;
+  cursor: pointer;
+  text-align: center;
+}
+
+.text-footer{
+  font-size: 0.9em;
+  color: rgb(32, 32, 32);
+  text-align: center;
+}
 
 
 @media (max-width: 600px) {
