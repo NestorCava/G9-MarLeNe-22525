@@ -221,6 +221,8 @@ nav a:hover{
   width: 600px;
 }
 
+
+
 @media (max-width: 600px) {
     .grid-container {
         grid-template:
