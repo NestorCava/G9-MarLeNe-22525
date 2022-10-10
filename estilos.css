@@ -166,6 +166,8 @@ nav a:hover{
       transform: rotate(-140deg);
       top: 10px;
   }
+
+
 }
 
 
@@ -239,6 +241,25 @@ nav a:hover{
   width: 600px;
 }
 
+.indicaciones .button{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  background-color: mediumpurple;
+}
+
+.indicaciones a:hover{
+  color: indigo;
+}
+
+.infografia img{
+  width: 600px;
+}
 
 .social img{
   height: 70px;
