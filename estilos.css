@@ -254,7 +254,6 @@ a{
 .sedes{
   display: grid;
   grid-template-columns: repeat(2,auto);
-
   background-color: rgba(147, 112, 216, 0.534);
 
 }
@@ -263,7 +262,7 @@ a{
   text-align: center;
   font-size: xx-large;
   color:rgb(57, 43, 83);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sedes>div>img{
@@ -279,5 +278,37 @@ a{
   text-align: left;
   font-size: large;
   color:rgb(57, 43, 83);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
+
+.sedes>div>iframe{
+  width: 80%;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .sedes{
+    grid-template-columns: auto;
+  }
+  
+  .nombre-sede{
+    font-size:large;
+  }
+  
+  .informacion-sede{
+    font-size: small;
+  }
+  
+}
+
+@media (min-width: 900px) {
+  .nombre-sede{
+    font-size:large;
+  }
+  
+  .informacion-sede{
+    font-size: small;
+  }
+} 
