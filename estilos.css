@@ -260,13 +260,24 @@ a{
 }
 
 .nombre-sede{
+  text-align: center;
   font-size: xx-large;
   color:rgb(57, 43, 83);
   padding-bottom: 10px;
 }
 
-.sedes div img{
+.sedes>div>img{
   width: 80%;
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.informacion-sede{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-size: large;
+  color:rgb(57, 43, 83);
+  padding-bottom: 10px;
 }
