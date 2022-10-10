@@ -14,10 +14,7 @@ body {
     font-family: "Public Sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
-<<<<<<< HEAD
-=======
     background-color: rgba(147, 112, 216, 0.534);
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 }
 
 .grid-container > * {
@@ -27,10 +24,6 @@ body {
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 .header{
   display: flex;
   min-height: 70px;
@@ -42,39 +35,7 @@ body {
   
   .main {
     grid-area: main;
-<<<<<<< HEAD
-    background-color: #f5f5f5;
-  }
-  
-  .footer {
-    grid-area: footer;
-    background-color: mediumpurple;
-
-    /*Flex Property*/
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  .cabecera-footer{
-    font-size: 0.7em;
-    color: rgb(1, 13, 43);
-    text-align: left;
-  }
-
-  .text-footer{
-    font-size: 0.6em;
-    color: rgb(68, 67, 67);
-    text-align: left;
-  }
-
-  .text-footer>img{
-    height: 12px;
-=======
     /* background-color: #f5f5f5; */
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
   }
 
 .grid-container {
@@ -83,11 +44,7 @@ body {
     grid-template: 
         "header" 100px
         "main" auto
-<<<<<<< HEAD
-        "footer" 100px;
-=======
         "footer" auto;
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 }
 
 a{
@@ -118,11 +75,6 @@ nav a:hover{
   display: none;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 @media (max-width:600px){
   header{
       flex-direction: row;
@@ -241,17 +193,6 @@ a{
   }
 }
 
-<<<<<<< HEAD
-.right img{
-  width: 600px;
-}
-
-.left img{
-  width: 600px;
-}
-
-=======
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 @media (max-width: 600px) {
     .grid-container {
         grid-template:
@@ -271,9 +212,6 @@ a{
         200px    auto   200px;
     }
 }
-<<<<<<< HEAD
-
-=======
 /************************************************************************************
 *************************************FOOTER*****************************************
 *************************************************************************************/
@@ -320,18 +258,13 @@ a{
     align-items: stretch;
   }
 }
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 /* ***********************************************************************************
 ************************ESTILO SEDES**************************************************
 **************************************************************************************/
 .sedes{
   display: grid;
   grid-template-columns: repeat(2,auto);
-<<<<<<< HEAD
-  background-color: rgba(147, 112, 216, 0.534);
-=======
   /* background-color: rgba(147, 112, 216, 0.534); */
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
 
 }
 
@@ -380,11 +313,7 @@ a{
   
 }
 
-<<<<<<< HEAD
-@media (min-width: 900px) {
-=======
 /* @media (max-width: 900px) {
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
   .nombre-sede{
     font-size:large;
   }
@@ -392,7 +321,6 @@ a{
   .informacion-sede{
     font-size: small;
   }
-<<<<<<< HEAD
 } 
 
 /* ***********************************************************************************
@@ -553,6 +481,3 @@ a{
 		width: 100%;
 	}
 }
-=======
-}  */
->>>>>>> 58de74b0690cd74d6c08bc6ab77d9a963c496b42
