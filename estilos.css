@@ -224,24 +224,40 @@ a{
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .cabecera-footer{
-  font-size: 0.7em;
+  font-size: 0.9em;
   color: rgb(1, 13, 43);
   text-align: left;
 }
 
 .text-footer{
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: rgb(68, 67, 67);
   text-align: left;
 }
 
 .text-footer>img{
   height: 12px;
+}
+
+/* @media (max-width: 600px) {
+  .footer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+} */
+
+@media (max-width: 900px) {
+  .footer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 /* ***********************************************************************************
 ************************ESTILO SEDES**************************************************
@@ -298,7 +314,7 @@ a{
   
 }
 
-@media (min-width: 900px) {
+/* @media (max-width: 900px) {
   .nombre-sede{
     font-size:large;
   }
@@ -306,4 +322,4 @@ a{
   .informacion-sede{
     font-size: small;
   }
-} 
+}  */
