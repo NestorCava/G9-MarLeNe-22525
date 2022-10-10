@@ -14,6 +14,7 @@ body {
     font-family: "Public Sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
+    background-color: rgba(147, 112, 216, 0.534);
 }
 
 .grid-container > * {
@@ -254,7 +255,7 @@ a{
 .sedes{
   display: grid;
   grid-template-columns: repeat(2,auto);
-  background-color: rgba(147, 112, 216, 0.534);
+  /* background-color: rgba(147, 112, 216, 0.534); */
 
 }
 
