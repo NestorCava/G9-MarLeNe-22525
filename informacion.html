@@ -14,6 +14,11 @@
             <img src="img/Logo1.jpg" alt="logo">
             <img src="img/LAB.jpg" alt="LAB">
         </a>
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
         <nav>
             <a href="index.html" class="nav-link">Inicio</a>
             <a href="sedes.html" class="nav-link">Sedes</a>
@@ -23,6 +28,52 @@
     </header>
     
    
-    <footer class="footer">FOOTER</footer>
+    <footer class="footer">
+        <div class="icono-institucion">
+            <a href="" class="logo">
+                <img src="img/Logo1.jpg" alt="Logo">
+                <img src="img/LAB.jpg" alt="LAB">
+            </a>
+        </div>
+
+        <div class="sede-centro">
+            <p><span class="cabecera-footer"><strong>LAB Sede Centro</strong></span></p>
+            <p class="text-footer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZRJREFUSEu1lc1RwzAQhZ9kBl9DBYQKklRAjgmnUAHqANNJ0oGogJwQN0IFJBWQdADHMOMVIycGoT/bM6Cjdv2+1ZN2zfDPi/2zPhoBE4g+47gFMAYwPBa0BrDShMUT5DZVZBIw5WIOVOKpNVck72IJUcAVF2sNDFpauFYkR6HcIKBl5a7eQpEs3E0PcPT8zUncgaHQJYz3YBmG0DD2ndt5mnDh3okHCFS/ywnDJeS7LTaD6O15BbQh3ik8gOc9w7Uq5TLk7zQTM2g8WDHvLkIn0LZYTjhzq6/jITsVyV+afw34UCR7doE+IBMraFx+J3WxiOFFldI0pPW5Y+6UCwngxtre5oRR5JJfAfSt3HtFUiQBkxMxZoRnh7tljBVU6o3Z5xkbaK3NM7XFwQijR8jqKdcr2Ggdu/igFbDnsB1YkVOEUn8qDVQfBZhAx3ERHBNJgAm2sipiTfIO6qAZB58cq9hUZcDmlDCONWLjCUxCDNJGvBUgBGkr3hpQQ/a8GtHICUXKlsY+SL7HjsHGn35HPS/9C3n1qxkStdXTAAAAAElFTkSuQmCC"/>
+                Av. Maipú 508 - Loc. 1
+            </p>
+            <p class="text-footer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYJJREFUSEvVlc1RwzAQhd8qM+QIHRAqACog3JJccCpA6QAqIHSQVMCmgoRLnBumg9ABJeQIzKBlZGxGVqz8OGQYdPRI79NbvV0T9rxoz/r4G0Bb6QEEx3VBbwJe7OKy4CCCPnonjEFopqKCJBa+/DVAR+m5AKeuIAE8NdyrCik4aCstZUK7QDYCZNDb2PBgWydFQE0nEFyUiYjgcSYc7QZQmgFc+yIEvBwYNKskyncQQTD2HrmyuNVZjqnCK4DDHCIGJzOw/VZpLXVy2ysTAfdTw/1K6r4DK9KCbpDC3HGxEINz30XWlA9ESKaGh6ELlM6ijtJ9Ae6cQ3Mx6OaQVFzhCcBZVudgMwaHXYv0hAhXDmQhwAAGI1JpEFLxfIWaMQiwt/xQSPzRsfItBEld0HXjvHJcp6WoYRJqvgBsFBvWjrP1+cje5MaN74pTw9iw3ZuujX84WbpsXO24+OmTAojwHH/y96jfFpAfsGV7qyEiQROERl6+0DjZ2MH6Qpbv+P+AL5shhxns0UE6AAAAAElFTkSuQmCC"/>
+                <!-- <box-icon name='phone' type='solid' color='#490260' ></box-icon> -->
+                4233688 / 4221519
+            </p>
+            <p class="text-footer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZhJREFUSEvVlc1VGzEUhb+ryTlexq7ApgJIBbGXZBNTAU4HdABUELuCiAogq8kuQwVAB5MKsJdejF6OZJwzwCzGmL9oKZ33vnuv3mjECy+9cH9eF7CfTQqMz1u5Morc/Gjd456DfTexrZrfFefB/+v7LgALwTQE/C98GUV+YbJnjiHwvcnxJg7+KDAOH+iq4hilpmAUOGaqKHF4g906qC1gocAQx9jguEmpwBOYmePqKYAzc3gFfgtOV8IbQOJAxl79rJUDc4yoOJL4GgvGTLpLx+0jJ+LSxEkUsj5rBegEekvHNdBPMGMg40dDVPM8+F59xFsBLLAjRxEBwHUnMFo6psCh4MZgAHwEFp3AoO6uFQBxgDGODe9UryAZw7zyF+vIzPhJxnTjiGKhM04eTMjciM1UmLOhSNl/MsdRTQitHDQpe5i/iW+COcb5xmMaixGlLH1kZVKplHuc11KBqWUMWF18d3NAmhz1FSzeA3LyVjEXtgiZdtO+0h09Wq0i2uZVfUPAc/xwxGVe+dWjGKPdJoo2tf8/4C+GXNsZvMO9FgAAAABJRU5ErkJggg=="/>
+                +54 9 351 6542362
+            </p>
+            <p class="text-footer">Horarios de Atención: Lunes a Viernes de 8 a 12 hs y de 17 a 19 hs.</p>
+            <p class="text-footer">Horarios de Extracciones: Lunes a Viernes de 8 a 11 hs.</p>
+            <p class="text-footer">(Estudios con Estímulo: hasta las 8:30 hs.)</p>
+        </div>
+        
+        <div class="sede-america">
+            <p><span class="cabecera-footer"><strong> Sede Resid. América</strong></span></p>
+            <p class="text-footer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFlJREFUSEtjZKAxYKSx+QxEWeDJlPAfm0O2/1tAUD9BBSCDRy0gGM+jQQQOIlzBQDD8cCiAJWF4Mh21AD2khmEQ4UstoxmNYF4aDaKBDyKCLsCjgKg6mRILAJ3aUBkJCaROAAAAAElFTkSuQmCC"/>
+                Centro Médico Privado Integral CEPRIN
+            </p>
+            <p class="text-footer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZRJREFUSEu1lc1RwzAQhZ9kBl9DBYQKklRAjgmnUAHqANNJ0oGogJwQN0IFJBWQdADHMOMVIycGoT/bM6Cjdv2+1ZN2zfDPi/2zPhoBE4g+47gFMAYwPBa0BrDShMUT5DZVZBIw5WIOVOKpNVck72IJUcAVF2sNDFpauFYkR6HcIKBl5a7eQpEs3E0PcPT8zUncgaHQJYz3YBmG0DD2ndt5mnDh3okHCFS/ywnDJeS7LTaD6O15BbQh3ik8gOc9w7Uq5TLk7zQTM2g8WDHvLkIn0LZYTjhzq6/jITsVyV+afw34UCR7doE+IBMraFx+J3WxiOFFldI0pPW5Y+6UCwngxtre5oRR5JJfAfSt3HtFUiQBkxMxZoRnh7tljBVU6o3Z5xkbaK3NM7XFwQijR8jqKdcr2Ggdu/igFbDnsB1YkVOEUn8qDVQfBZhAx3ERHBNJgAm2sipiTfIO6qAZB58cq9hUZcDmlDCONWLjCUxCDNJGvBUgBGkr3hpQQ/a8GtHICUXKlsY+SL7HjsHGn35HPS/9C3n1qxkStdXTAAAAAElFTkSuQmCC"/>
+                Av. Guanahaní 1165 - B° Residencial América
+            </p>
+            <p class="text-footer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYJJREFUSEvVlc1RwzAQhd8qM+QIHRAqACog3JJccCpA6QAqIHSQVMCmgoRLnBumg9ABJeQIzKBlZGxGVqz8OGQYdPRI79NbvV0T9rxoz/r4G0Bb6QEEx3VBbwJe7OKy4CCCPnonjEFopqKCJBa+/DVAR+m5AKeuIAE8NdyrCik4aCstZUK7QDYCZNDb2PBgWydFQE0nEFyUiYjgcSYc7QZQmgFc+yIEvBwYNKskyncQQTD2HrmyuNVZjqnCK4DDHCIGJzOw/VZpLXVy2ysTAfdTw/1K6r4DK9KCbpDC3HGxEINz30XWlA9ESKaGh6ELlM6ijtJ9Ae6cQ3Mx6OaQVFzhCcBZVudgMwaHXYv0hAhXDmQhwAAGI1JpEFLxfIWaMQiwt/xQSPzRsfItBEld0HXjvHJcp6WoYRJqvgBsFBvWjrP1+cje5MaN74pTw9iw3ZuujX84WbpsXO24+OmTAojwHH/y96jfFpAfsGV7qyEiQROERl6+0DjZ2MH6Qpbv+P+AL5shhxns0UE6AAAAAElFTkSuQmCC"/>
+                4785442
+            </p>
+            <p class="text-footer">Horarios de Atención: Lunes a Viernes de 8 a 10:30 hs.</p>
+            <p class="text-footer">Horarios de Extracciones: Lunes a Viernes de 8 a 10 hs.</p>
+            <p class="text-footer">(Estudios con Estímulo: hasta las 8:30 hs.)</p>
+        </div>
+    </footer>
 </body>
 </html>
