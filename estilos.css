@@ -24,6 +24,7 @@ body {
     text-align: center;
 }
 
+
 .header{
   display: flex;
   min-height: 70px;
@@ -35,35 +36,7 @@ body {
   
   .main {
     grid-area: main;
-    background-color: #f5f5f5;
-  }
-  
-  .footer {
-    grid-area: footer;
-    background-color: mediumpurple;
-
-    /*Flex Property*/
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  .cabecera-footer{
-    font-size: 0.7em;
-    color: rgb(1, 13, 43);
-    text-align: left;
-  }
-
-  .text-footer{
-    font-size: 0.6em;
-    color: rgb(68, 67, 67);
-    text-align: left;
-  }
-
-  .text-footer>img{
-    height: 12px;
+    /* background-color: #f5f5f5; */
   }
 
 .grid-container {
@@ -72,7 +45,7 @@ body {
     grid-template: 
         "header" 100px
         "main" auto
-        "footer" 100px;
+        "footer" auto;
 }
 
 a{
@@ -221,14 +194,6 @@ a{
   }
 }
 
-.right img{
-  width: 600px;
-}
-
-.left img{
-  width: 600px;
-}
-
 @media (max-width: 600px) {
     .grid-container {
         grid-template:
@@ -248,7 +213,36 @@ a{
         200px    auto   200px;
     }
 }
+/************************************************************************************
+*************************************FOOTER*****************************************
+*************************************************************************************/
+.footer {
+  grid-area: footer;
+  background-color: mediumpurple;
 
+  /*Flex Property*/
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.cabecera-footer{
+  font-size: 0.7em;
+  color: rgb(1, 13, 43);
+  text-align: left;
+}
+
+.text-footer{
+  font-size: 0.6em;
+  color: rgb(68, 67, 67);
+  text-align: left;
+}
+
+.text-footer>img{
+  height: 12px;
+}
 /* ***********************************************************************************
 ************************ESTILO SEDES**************************************************
 **************************************************************************************/
