@@ -255,6 +255,14 @@ a{
   display: grid;
   grid-template-columns: repeat(2,auto);
 
+  background-color: rgba(147, 112, 216, 0.534);
+
+}
+
+.nombre-sede{
+  font-size: xx-large;
+  color:rgb(57, 43, 83);
+  padding-bottom: 10px;
 }
 
 .sedes div img{
