@@ -327,6 +327,35 @@ a{
 /*******************************************************************************************
 ***************************INFORMACION******************************************************
 ********************************************************************************************/
+.informacion{
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+}
+
+.analisis-generales{
+  display: grid;
+  grid-template-areas: 'titulo titulo'
+                       'infografia texto'
+                       'infografia otros';
+}
+
+.titulo-indicaciones{
+  grid-area: titulo;
+  font-size: xx-large;
+}
+
+.infografia-general{
+  grid-area: infografia;
+}
+
+.texto-indicaciones{
+  grid-area: texto;
+}
+
+.otros-indicaciones{
+  grid-area: otros;
+}
+
 .informacion .button{
   font-size: 20px;
   font-weight: bold;
