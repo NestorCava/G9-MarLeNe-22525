@@ -337,19 +337,32 @@ a{
   grid-template-areas: 'titulo titulo'
                        'infografia texto'
                        'infografia otros';
+  justify-content: center;
+                       
 }
 
 .titulo-indicaciones{
   grid-area: titulo;
+
+  text-align: center;
   font-size: xx-large;
+  color:rgb(57, 43, 83);
+  margin-bottom: 10px;
 }
 
 .infografia-general{
   grid-area: infografia;
+  
+  width: 70%;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin: 0px auto 10px;
 }
 
 .texto-indicaciones{
   grid-area: texto;
+
+  text-align: left;
 }
 
 .otros-indicaciones{
