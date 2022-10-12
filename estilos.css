@@ -361,14 +361,16 @@ a{
 
 .texto-indicaciones{
   grid-area: texto;
-
   text-align: left;
 }
 
 .otros-indicaciones{
   grid-area: otros;
+  display: block;
 }
-
+.otros-indicaciones p{
+  margin-bottom: 20px;
+}
 .informacion .button{
   font-size: 20px;
   font-weight: bold;
@@ -377,6 +379,7 @@ a{
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   padding: 10px;
+  margin-top: 10px;
   width: 200px;
   background-color: mediumpurple;
 }
