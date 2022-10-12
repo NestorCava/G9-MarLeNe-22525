@@ -165,16 +165,16 @@ a{
 }
 
 
-.position{
+.slider position{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
 }
 .slider{
   background-image: url(img/50520-laboratorio-clinico.jpg);
   background-size: cover;
-  height: 65%;
+  height: 100%;
   width: 100%;
   animation: animate 35s infinite;
 }
