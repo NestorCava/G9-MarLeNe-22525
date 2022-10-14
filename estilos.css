@@ -330,6 +330,7 @@ a{
 .informacion{
   display: grid;
   grid-template-rows: repeat(2,auto);
+  row-gap: 20px;
 }
 
 .analisis-generales{
@@ -337,6 +338,7 @@ a{
   grid-template-areas: 'titulo titulo'
                        'infografia texto'
                        'infografia otros';
+  row-gap: 10px;
   justify-content: center;
                        
 }
@@ -364,6 +366,9 @@ a{
   text-align: left;
 }
 
+.texto-indicaciones>p>img{
+  display:inline-block
+}
 .otros-indicaciones{
   grid-area: otros;
   display: block;
@@ -382,4 +387,47 @@ a{
   margin-top: 10px;
   width: 200px;
   background-color: mediumpurple;
+}
+
+.COVID-19{
+  display: grid;
+  grid-template-areas: 'titulo titulo'
+                       'icono texto'
+                       'infografia1 infografia2';
+  row-gap: 10px;
+  
+  justify-content: center;
+                       
+}
+
+.icono-covid{
+  grid-area: icono;
+
+  width: 30%;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin-right: 10px;
+  justify-self: end;
+}
+
+.infografia-covid-1{
+  grid-area: infografia1;
+}
+
+.infografia-covid-1 img{
+  width: 70%;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin: 0px auto 10px;
+}
+
+.infografia-covid-2{
+  grid-area: infografia2;
+}
+
+.infografia-covid-2 img{
+  width: 70%;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin: 0px auto 10px;
 }
