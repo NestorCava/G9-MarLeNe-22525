@@ -23,6 +23,25 @@ body {
     padding: 10px;
     text-align: center;
 }
+ 
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+        "header" 100px
+        "main" auto
+        "footer" auto;
+}
+
+.main {
+  grid-area: main;
+  /* background-color: #f5f5f5; */
+}
+
+
+/******************************************************/
+/************************HEADER************************/
+/******************************************************/
 
 .header{
   display: flex;
@@ -31,20 +50,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-}
-  
-  .main {
-    grid-area: main;
-    /* background-color: #f5f5f5; */
-  }
-
-.grid-container {
-    display: grid;
-    gap: 10px;
-    grid-template: 
-        "header" 100px
-        "main" auto
-        "footer" auto;
 }
 
 a{
@@ -94,19 +99,19 @@ nav a:hover{
     opacity: 0.8;
     color: black;
     font-size: 1.5em;
-}
+  }
 
-a{
+  a{
     display: block;
     text-align: right;
-}
+  }
 
   #menu-check:not(:checked) ~ nav {
-      display: none;
+    display: none;
   }
 
   #menu-check:checked ~ nav {
-      display: block;
+    display: block;
   }
 
   #menu {
@@ -125,7 +130,7 @@ a{
     color: indigo;
     filter: brightness(110%);
     cursor: pointer;
-}
+  }
 
   #top-line, #middle-line, #bottom-line{
     position: absolute;
@@ -159,12 +164,12 @@ a{
     top: 10px;
   }
 
-  .indicaciones .button{
-    display: inline-block;
-  }
-
 }
 
+
+/******************************************************/
+/***********************CARRUSEL***********************/
+/******************************************************/
 
 .slider position{
   position: absolute;
@@ -217,56 +222,34 @@ a{
 }
 
 
-.indicaciones .button{
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
+/******************************************************/
+/************************INICIO************************/
+/******************************************************/
+
+.logo-main{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  border: 2px solid rgb(12, 12, 12);
-  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-  padding: 10px;
-  width: 200px;
-  background-color: mediumpurple;
 }
 
-.indicaciones a:hover{
+.lab h1{
   color: indigo;
-  filter: brightness(110%);
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.infografia img{
-  width: 600px;
+.lab ul{
+  list-style: none;
 }
 
 
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template:
-            "header  header" 100px
-            "main" auto
-            "footer  footer" 100px /
-            200px auto;
-    }
-}
-
-@media (min-width: 900px) {
-    .grid-container {
-      grid-template:
-        "header  header header"  100px
-        "main" auto
-        "footer  footer footer"  100px /
-        200px    auto   200px;
-    }
-}
 /************************************************************************************
 *************************************FOOTER*****************************************
 *************************************************************************************/
+
 .footer {
   grid-area: footer;
   background-color: mediumpurple;
-
   /*Flex Property*/
   display: inline-flex;
   flex-direction: row;
@@ -306,14 +289,16 @@ a{
     align-items: stretch;
   }
 }
-/* ***********************************************************************************
-************************ESTILO SEDES**************************************************
+
+
+/*************************************************************************************
+************************SEDES*********************************************************
 **************************************************************************************/
+
 .sedes{
   display: grid;
   grid-template-columns: repeat(2,auto);
   /* background-color: rgba(147, 112, 216, 0.534); */
-
 }
 
 .nombre-sede{
@@ -373,8 +358,64 @@ a{
   }
 } 
 
-/* ***********************************************************************************
-************************ESTILO CONTACTO**************************************************
+
+/******************************************************/
+/*********************INFORMACION**********************/
+/******************************************************/
+
+.indicaciones .button{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid rgb(12, 12, 12);
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  background-color: mediumpurple;
+}
+
+.indicaciones a:hover{
+  color: indigo;
+  filter: brightness(110%);
+}
+
+@media (max-width:600px){
+  .indicaciones .button{
+    display: inline-block;
+  }
+}
+
+.infografia img{
+  width: 600px;
+}
+
+.obras-sociales{
+  width: 600px;
+  display: inline-block;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(12, 12, 12);
+  border-radius: 5px;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+.obras-sociales h2{
+  font-weight: bolder;
+  /*color:rgb(57, 43, 83);*/
+}
+
+.obras-sociales ul{
+  list-style: none;
+}
+
+
+/*************************************************************************************
+************************CONTACTO******************************************************
 **************************************************************************************/
 
 .formulario__container {
@@ -534,4 +575,29 @@ a{
 	.formulario__btn {
 		width: 100%;
 	}
+}
+
+
+/******************************************************/
+/*********************MEDIA QUERIES********************/
+/******************************************************/
+
+@media (max-width: 600px) {
+  .grid-container {
+      grid-template:
+          "header  header" 100px
+          "main" auto
+          "footer  footer" 100px /
+          200px auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  100px
+      "main" auto
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+  }
 }
