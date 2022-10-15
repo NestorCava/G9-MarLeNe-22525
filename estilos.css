@@ -14,7 +14,7 @@ body {
     font-family: "Public Sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
-    background-color: rgba(147, 112, 216, 0.534);
+    background-color: white;
 }
 
 .grid-container > * {
@@ -35,7 +35,7 @@ body {
 
 .main {
   grid-area: main;
-  /* background-color: #f5f5f5; */
+  background-color: rgba(147, 112, 216, 0.534);
 }
 
 
@@ -298,7 +298,7 @@ nav a:hover{
 .sedes{
   display: grid;
   grid-template-columns: repeat(2,auto);
-  /* background-color: rgba(147, 112, 216, 0.534); */
+  background-color: rgba(147, 112, 216, 0.534);
 }
 
 .nombre-sede{
