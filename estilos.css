@@ -164,7 +164,7 @@ nav a:hover{
 
 /****************CARRUSEL****************/
 
-.slider position{
+.slider-position{
   position: absolute;
   top: 100%;
   left: 100%;
@@ -217,9 +217,14 @@ nav a:hover{
 /***************INICIO*****************/
 
 .logo-main{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 250px;
+  width: 800px;
+  border: 2px solid rgb(12, 12, 12);
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
 .lab h1{
@@ -281,8 +286,8 @@ nav a:hover{
   align-items: center;
   justify-content: center;
   border: 2px solid rgb(12, 12, 12);
-  border-radius: 5px;
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
 .obras-sociales ul{
