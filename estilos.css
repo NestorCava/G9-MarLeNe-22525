@@ -166,14 +166,14 @@ nav a:hover{
 
 .slider-position{
   position: absolute;
-  top: 100%;
-  left: 100%;
-  transform: translate(-100%, -100%);
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
 }
-.slider{
+.slider-container{
   background-image: url(img/50520-laboratorio-clinico.jpg);
   background-size: cover;
-  height: 100%;
+  height: 50%;
   width: 100%;
   animation: animate 35s infinite;
 }
