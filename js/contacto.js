@@ -11,7 +11,8 @@ const expresiones = {
 const campos = {
 	nombre: false,
 	correo: false,
-	telefono: false
+	telefono: false,
+	consulta: false
 }
 
 const validarFormulario = (e) => {
@@ -55,11 +56,9 @@ inputs.forEach((input) => {
 });
 
 formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+	//e.preventDefault();
 
-
-	const obrasocial = (document.getElementById('obrasocialSi').checked || document.getElementById('obrasocialNo').checked);
-	if(campos.nombre && campos.correo && campos.telefono && obrasocial){
+	if(campos.nombre && campos.correo && campos.telefono){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
