@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title>Información</title>
 </head>
 <body class="grid-container">
@@ -81,22 +82,37 @@
             <div class="texto-indicaciones">
                 
 
-                <p>PCR para COVID-19 (Hisopado)</p>
-                <p>Test rápido de Antígeno (Hisopado)</p>
-                <p>Cuantificación de Anticuerpos (Serología)</p>
-                <p>Turnos al WhatsApp +54 9 351-6542362</p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    PCR para COVID-19 (Hisopado)
+                </p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    Test rápido de Antígeno (Hisopado)
+                </p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    Cuantificación de Anticuerpos (Serología)
+                </p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    Turnos al WhatsApp +54 9 351-6542362
+                </p>
             </div>
             
-            <div class="infografia-covid-1">
+            <div  class="infografia-covid-1">
                 <img src="img/Testeate-COVID-19-Que-test-me-tengo-que-hacer.jpg" alt="Qué test hacer">
             </div>
+            
             <div class="infografia-covid-2">
                 <img src="img/Testeate-COVID-19-Tengo-el-resultado-que-hago.jpg" alt="Tengo el resultado">
-                <br><br><br>
             </div>
         </div>
     </section>
    
+    
+
+
     <footer class="footer">
         <div class="icono-institucion">
             <a href="" class="logo">
