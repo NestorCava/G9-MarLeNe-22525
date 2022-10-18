@@ -511,6 +511,23 @@ nav a:hover{
 	display: block;
 }
 
+.formulario__textarea {
+	width:70%;
+  height: 20%;
+	background: #fff;
+	border: 3px solid #db8ff2;
+	border-radius: 3px;
+	padding: 0 40px 0 10px;
+  font-size: 15px;
+}
+
+.formulario__textarea:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+
 .formulario__validacion-estado {
 	position: absolute;
 	right: 10px;
