@@ -380,8 +380,7 @@ nav a:hover{
                        'infografia texto'
                        'infografia otros';
   row-gap: 10px;
-  justify-content: center;
-                       
+  justify-content: center;                       
 }
 
 .titulo-indicaciones{
@@ -389,14 +388,15 @@ nav a:hover{
 
   text-align: center;
   font-size: xx-large;
-  color:rgb(57, 43, 83);
+  font-weight: bolder;
+  color: rgb(57, 43, 83);
   margin-bottom: 10px;
 }
 
 .infografia-general{
   grid-area: infografia;
-  
   width: 70%;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin: 0px auto 10px;
@@ -430,6 +430,7 @@ nav a:hover{
 .otros-indicaciones p{
   margin-bottom: 20px;
 }
+
 .informacion .button{
   font-size: 20px;
   font-weight: bold;
@@ -441,6 +442,12 @@ nav a:hover{
   margin-top: 10px;
   width: 200px;
   background-color: mediumpurple;
+}
+
+.informacion .button:hover{
+  color: indigo;
+  filter: brightness(110%);
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
 
 .COVID-19{
@@ -456,8 +463,8 @@ nav a:hover{
 
 .icono-covid{
   grid-area: icono;
-
   width: 35%;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-right: 10px;
@@ -470,6 +477,7 @@ nav a:hover{
 
 .infografia-covid-1 img{
   width: 90%;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin: 0px auto 10px;
@@ -494,6 +502,7 @@ nav a:hover{
 
 .infografia-covid-2 img{
   width: 90%;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin: 0px auto 10px;
@@ -526,7 +535,7 @@ nav a:hover{
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(12, 12, 12);
+  border: 2px solid rgb(57, 43, 83);
   border-radius: 5px;
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 }
@@ -536,7 +545,7 @@ h4 ul{
 }
 .obras-sociales h2{
   font-weight: bolder;
-  /*color:rgb(57, 43, 83);*/
+  color:rgb(57, 43, 83);
 }
 
 /*************************************************************************************
