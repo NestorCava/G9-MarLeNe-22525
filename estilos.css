@@ -398,16 +398,15 @@ nav a:hover{
 
 .titulo-indicaciones{
   grid-area: titulo;
-
   text-align: center;
   font-size: xx-large;
+  font-weight: bolder;
   color:rgb(57, 43, 83);
   margin-bottom: 10px;
 }
 
 .infografia-general{
   grid-area: infografia;
-  
   width: 70%;
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -455,6 +454,12 @@ nav a:hover{
   background-color: mediumpurple;
 }
 
+.informacion .button:hover{
+  color: indigo;
+  filter: brightness(110%);
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
 .COVID-19{
   display: grid;
   grid-template-areas: 'titulo titulo'
@@ -462,8 +467,7 @@ nav a:hover{
                        'infografia1 infografia2';
   row-gap: 10px;
   
-  justify-content: center;
-                       
+  justify-content: center;                      
 }
 
 .icono-covid{
@@ -482,6 +486,7 @@ nav a:hover{
 
 .infografia-covid-1 img{
   width: 90%;
+  
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin: 0px auto 10px;
