@@ -383,6 +383,7 @@ nav a:hover{
   display: grid;
   grid-template-rows: repeat(3,auto);
   row-gap: 20px;
+  background-color: rgba(147, 112, 216, 0.534);
 }
 
 .analisis-generales{
