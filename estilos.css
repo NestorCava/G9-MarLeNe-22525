@@ -60,6 +60,9 @@ a{
 .logo{
   display: flex;
   align-items: center;
+  border: 2px solid rgb(57, 43, 83);
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
 }
 
 .logo img{
@@ -184,6 +187,9 @@ nav a:hover{
   height: 530px;
   width: 100%;
   animation: animate 35s infinite;
+  border: 2px solid rgb(57, 43, 83);
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
 @keyframes animate{
@@ -233,8 +239,8 @@ nav a:hover{
   align-items: center;
   justify-content: center;
   height: 250px;
-  width: 800px;
-  border: 2px solid rgb(12, 12, 12);
+  width: 806px;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
@@ -265,14 +271,18 @@ nav a:hover{
   align-items: flex-start;
 }
 
+.icono-institucion{
+  display: flex;
+}
+
 .cabecera-footer{
-  font-size: 0.9em;
-  color: rgb(53, 30, 97);
+  font-size: 1em;
+  color: rgb(57, 43, 83);
   text-align: left;
 }
 
 .text-footer{
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: rgb(68, 67, 67);
   text-align: left;
 }
@@ -318,6 +328,7 @@ nav a:hover{
 
 .sedes>div>img{
   width: 80%;
+  /* border: 2px solid rgb(57, 43, 83); */
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -327,7 +338,7 @@ nav a:hover{
   width: 80%;
   margin: auto;
   text-align: left;
-  font-size: large;
+  font-size: 1em;
   color:rgb(57, 43, 83);
   margin-bottom: 10px;
 }
@@ -345,12 +356,12 @@ nav a:hover{
   }
   
   .nombre-sede{
-    font-size:larger;
+    font-size: x-larger;
     font-weight: bolder;
   }
   
   .informacion-sede{
-    font-size: small;
+    font-size: large;
   }
   
 }
@@ -395,21 +406,31 @@ nav a:hover{
   }
 }
 
+.indicaciones h2{
+  font-weight: bolder;
+  color:rgb(57, 43, 83);
+}
+
 .indicaciones img{
-  border: 2px solid rgb(12, 12, 12);
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
 
+.COVID-19 h2{
+  font-weight: bolder;
+  color:rgb(57, 43, 83);
+}
+
 .COVID-19 img{
-  border: 2px solid rgb(12, 12, 12);
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
 
 .infografia img{
   width: 600px;
-  border: 2px solid rgb(12, 12, 12);
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
@@ -421,14 +442,14 @@ nav a:hover{
   text-decoration: none;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(12, 12, 12);
+  border: 2px solid rgb(57, 43, 83);
   border-radius: 5px;
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 }
 
 .obras-sociales h2{
   font-weight: bolder;
-  /*color:rgb(57, 43, 83);*/
+  color:rgb(57, 43, 83);
 }
 
 .obras-sociales ul{
@@ -466,7 +487,7 @@ nav a:hover{
 	width:70%;
   vertical-align: middle; /*nuevo*/
 	background: #fff;
-	border: 3px solid #db8ff2;
+	border: 3px solid rgb(99, 6, 165);
 	border-radius: 3px;
 	height: 45px;
 	line-height: 45px;
