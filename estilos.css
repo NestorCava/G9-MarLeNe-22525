@@ -589,6 +589,7 @@ h4 ul{
   vertical-align: middle; /*nuevo*/
 	background: #fff;
 	border: 3px solid rgb(99, 6, 165);
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 	border-radius: 3px;
 	height: 45px;
 	line-height: 45px;
@@ -617,6 +618,7 @@ h4 ul{
   height: 20%;
 	background: #fff;
 	border: 3px solid rgb(99, 6, 165);
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 	border-radius: 3px;
 	padding: 0 40px 0 10px;
   font-size: 15px;
