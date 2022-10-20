@@ -234,12 +234,6 @@ nav a:hover{
 /************************INICIO************************/
 /******************************************************/
 
-.main{
-  display: grid;
-  grid-template-rows: repeat(3,auto);
-  row-gap: 20px;
-}
-
 /* .main{
   display: grid;
   grid-template-areas:  'slider slider slider slider'
@@ -264,7 +258,7 @@ nav a:hover{
     justify-content: center;
   } */
 
-  .slider-container{
+  /* .slider-container{
     height: auto;
     width: auto;
   }
@@ -277,7 +271,7 @@ nav a:hover{
   .lab{
     height: auto;
     width: auto;
-  }
+  } */
 
 }
 
