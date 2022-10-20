@@ -234,6 +234,55 @@ nav a:hover{
 /************************INICIO************************/
 /******************************************************/
 
+.main{
+  display: grid;
+  grid-template-rows: repeat(3,auto);
+  row-gap: 20px;
+}
+
+/* .main{
+  display: grid;
+  grid-template-areas:  'slider slider slider slider'
+                        'logo logo logo'
+                        'lab lab lab';
+  row-gap: 10px;
+  justify-content: center;
+} */
+
+@media (max-width 600px){
+
+  .main{
+    grid-template-rows: auto;
+  }
+
+  /* .main{
+    display: grid;
+    grid-template-areas:'slider'
+                        'logo'
+                        'lab';
+    row-gap: 10px;
+    justify-content: center;
+  } */
+
+  .slider-container{
+    height: auto;
+    width: auto;
+  }
+
+  .logo-main{
+    height: auto;
+    width: auto;
+  }
+
+  .lab{
+    height: auto;
+    width: auto;
+  }
+
+}
+
+
+
 .logo-main{
   display: inline-flex;
   align-items: center;
