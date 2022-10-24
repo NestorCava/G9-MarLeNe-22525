@@ -472,6 +472,7 @@ nav a:hover{
                        'icono texto'
                        'infografia1 infografia2';
   row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;                      
 }
 
