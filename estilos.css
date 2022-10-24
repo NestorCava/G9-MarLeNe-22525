@@ -408,7 +408,7 @@ nav a:hover{
 
 .infografia-general{
   grid-area: infografia;
-  width: 70%;
+  width: 90%;
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -569,6 +569,42 @@ h4 ul{
   list-style: none;
 }
 
+@media (max-width: 950px) {
+
+  .analisis-generales{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'infografia texto'
+                         'otros otros';     
+    row-gap: 10px;
+    justify-content: center;                 
+  }
+} 
+
+@media (max-width: 600px) {
+
+  .analisis-generales{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'infografia infografia'
+                         'otros otros';  
+    row-gap: 10px;
+    justify-content: center;                    
+  }
+
+  .analisis-generales>.texto-indicaciones{
+    display: none;
+  }
+  .otros-indicaciones{
+    grid-area: otros;
+    display: inline-block;
+  }
+
+  .informacion .button{
+    margin: auto;
+  }
+  
+} 
 /*************************************************************************************
 ************************CONTACTO******************************************************
 **************************************************************************************/
