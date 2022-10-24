@@ -36,6 +36,11 @@ body {
 .main {
   grid-area: main;
   background-color: rgba(147, 112, 216, 0.534);
+
+  display: grid;
+  grid-template-rows: repeat(3,auto);
+  row-gap: 10px;
+  justify-content: center; 
 }
 
 
@@ -179,6 +184,7 @@ nav a:hover{
   top: 100%;
   left: 100%;
   transform: translate(-100%, -100%);
+  
 }
 
 .slider-container{
@@ -243,6 +249,7 @@ nav a:hover{
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+  margin: auto;
 }
 
 .lab h1{
@@ -578,6 +585,45 @@ h4 ul{
                          'otros otros';     
     row-gap: 10px;
     justify-content: center;                 
+  }
+
+  .COVID-19{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'texto texto'
+                         'infografia1 infografia1'
+                         'infografia2 infografia2';
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;                      
+  }
+  
+  .icono-covid{
+    display: none;
+  }
+
+  .infografia-covid-1:hover{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  
+    -webkit-transform: scale(1.2); 
+    -moz-transform:  scale(1.2); 
+    -o-transform: scale(1.2); 
+    transform: scale(1.2); 
+  }
+
+  .infografia-covid-2:hover{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  
+    -webkit-transform: scale(1.2); 
+    -moz-transform:  scale(1.2); 
+    -o-transform: scale(1.2); 
+    transform: scale(1.2); 
   }
 } 
 
