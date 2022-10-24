@@ -329,6 +329,7 @@ nav a:hover{
 .sedes>div>img{
   width: 80%;
   /* border: 2px solid rgb(57, 43, 83); */
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -345,6 +346,7 @@ nav a:hover{
 
 .sedes>div>iframe{
   width: 80%;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-bottom: 10px;
