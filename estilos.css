@@ -184,7 +184,7 @@ nav a:hover{
 .slider-container{
   background-image: url(img/50520-laboratorio-clinico.jpg);
   background-size: cover;
-  height: 530px;
+  height: 33rem;
   width: 100%;
   animation: animate 35s infinite;
   border: 2px solid rgb(57, 43, 83);
@@ -238,8 +238,8 @@ nav a:hover{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
-  width: 806px;
+  height: 15.6rem;
+  width: 50.4rem;
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
@@ -247,7 +247,7 @@ nav a:hover{
 
 .lab h1{
   color: indigo;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
 }
 
