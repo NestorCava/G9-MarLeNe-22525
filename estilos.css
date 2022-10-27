@@ -241,50 +241,27 @@ nav a:hover{
 
 
 .main{
-    display: grid;
+    /* display: grid; */
     grid-auto-columns: minmax(35rem, 1fr);
     grid-template-rows: repeat(auto-fill), minmax(15rem, 1fr);
-    /* grid-auto-flow: dense; */
-    /* grid-row: span; */
-    /* row-gap: 10px; */
-}
-
-@media (max-width: 600px){
-
-  /* .main{
-    display: grid;
-    grid-auto-columns: 35rem;
-    grid-template-rows: repeat(auto-fill), minmax(15rem, 1fr);
-    grid-auto-flow: dense;
-    row-gap: 10px;
-  } */
-  
-  .logo-main { 
-    height: 15.5rem;
-    width: 35rem;
-  }
-
-  .logo-main img{ 
-    /* object-fit: contain; */
-    max-height: 100%;
-    max-width: 100%;
-  }
-
+    /* grid-auto-flow: dense;
+    grid-row: span;
+    row-gap: 10px; */
 }
 
 .logo-main{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15.5rem;
-  width: 50.5rem;
+  height: 15.3rem;
+  width: 60%;
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
 
 .logo-main img{ 
-  object-fit: cover;
+  /* object-fit: contain; */
   height: 100%;
   width: 100%;
 }
@@ -297,6 +274,30 @@ nav a:hover{
 
 .lab ul{
   list-style: none;
+}
+
+@media (max-width: 600px){
+
+  /* .main{
+    display: grid;
+    grid-auto-columns: 35rem;
+    grid-template-rows: repeat(auto-fill), minmax(15rem, 1fr);
+    grid-auto-flow: dense;
+    grid-row: span;
+    row-gap: 10px;
+  } */
+  
+  .logo-main { 
+    height: 15.3rem;
+    width: 100%;
+  }
+
+  .logo-main img{ 
+    /* object-fit: contain; */
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 
