@@ -36,6 +36,11 @@ body {
 .main {
   grid-area: main;
   background-color: rgba(147, 112, 216, 0.534);
+
+  display: grid;
+  grid-template-rows: repeat(3,auto);
+  row-gap: 10px;
+  justify-content: center; 
 }
 
 
@@ -179,6 +184,7 @@ nav a:hover{
   top: 100%;
   left: 100%;
   transform: translate(-100%, -100%);
+  
 }
 
 .slider-container{
@@ -192,6 +198,11 @@ nav a:hover{
   border-radius: 5px;
 }
 
+.slider-container img{
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+}
 @keyframes animate{
   14.28% {
       background-image: url(img/50520-laboratorio-clinico.jpg);
@@ -243,6 +254,7 @@ nav a:hover{
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+  margin: auto;
 }
 
 .lab h1{
@@ -329,6 +341,7 @@ nav a:hover{
 .sedes>div>img{
   width: 80%;
   /* border: 2px solid rgb(57, 43, 83); */
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -345,6 +358,7 @@ nav a:hover{
 
 .sedes>div>iframe{
   width: 80%;
+  border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
   margin-bottom: 10px;
@@ -406,7 +420,7 @@ nav a:hover{
 
 .infografia-general{
   grid-area: infografia;
-  width: 70%;
+  width: 90%;
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -470,6 +484,7 @@ nav a:hover{
                        'icono texto'
                        'infografia1 infografia2';
   row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;                      
 }
 
@@ -566,6 +581,82 @@ h4 ul{
   list-style: none;
 }
 
+@media (max-width: 950px) {
+
+  .analisis-generales{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'infografia texto'
+                         'otros otros';     
+    row-gap: 10px;
+    justify-content: center;                 
+  }
+
+  .COVID-19{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'texto texto'
+                         'infografia1 infografia1'
+                         'infografia2 infografia2';
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;                      
+  }
+  
+  .icono-covid{
+    display: none;
+  }
+
+  .infografia-covid-1:hover{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  
+    -webkit-transform: scale(1.2); 
+    -moz-transform:  scale(1.2); 
+    -o-transform: scale(1.2); 
+    transform: scale(1.2); 
+  }
+
+  .infografia-covid-2:hover{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  
+    -webkit-transform: scale(1.2); 
+    -moz-transform:  scale(1.2); 
+    -o-transform: scale(1.2); 
+    transform: scale(1.2); 
+  }
+} 
+
+@media (max-width: 600px) {
+
+  .analisis-generales{
+    display: grid;
+    grid-template-areas: 'titulo titulo'
+                         'infografia infografia'
+                         'otros otros';  
+    row-gap: 10px;
+    justify-content: center;                    
+  }
+
+  .analisis-generales>.texto-indicaciones{
+    display: none;
+  }
+  .otros-indicaciones{
+    grid-area: otros;
+    display: inline-block;
+  }
+
+  .informacion .button{
+    width: 30%;
+    margin: auto;
+  }
+  
+} 
 /*************************************************************************************
 ************************CONTACTO******************************************************
 **************************************************************************************/
