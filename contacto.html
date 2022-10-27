@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="img/favicon.ico">
     <title>Contacto</title>
@@ -31,146 +32,70 @@
         <br><br>
         <p class="nombre-sede">Para contactarse con nosotros, por favor complete el siguiente formulario</p>
         <br><br>
-    <!-- <form action="https://formspree.io/f/xoqbnqgj" method="POST" class="formulario" id="formulario"> -->
-        <!--Grupo: Nombre-->
-        <!-- <div class="formulario__grupo" id="grupo__nombre">
-            <label for="nombre" class="formulario__label">Nombre</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre Apellido">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El nombre sólo puede contener letras y espacios</p>
-        </div> -->
-
-        <!--Grupo: Correo Electrónico-->
-        <!-- <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="formulario__label">Correo Electrónico</label>
-                <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El correo electrónico sólo puede contener letras, números, puntos, guiones y guión bajo.</p>
-        </div> -->
-
-        <!--Grupo: Teléfono-->
-        <!-- <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Teléfono</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123132123123">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">Por favor ingrese un número de teléfono con código de área y sin espacios.</p>
-        </div> -->
-
-        <!--Grupo: Obra Social-->
-        <!-- <div class="formulario__grupo" id="grupo__obrasocial">
-            <label for="obrasocial" class="formulario__label">Indique si cuenta con Obra Social</label>
-                <div class="formulario__grupo-input">
-                    <input type="radio" class="formulario__radio" name="obrasocial" id="obrasocialSi"> Si
-                    <input type="radio" class="formulario__radio" name="obrasocial" id="obrasocialNo"> No
-                </div>
-        </div> -->
-
-        <!--Grupo: Consulta-->
-        <!-- <div class="formulario__grupo" id="grupo__consulta">
-            <label for="consulta" class="formulario__label">Indique su consulta</label>
-                <div class="formulario__grupo-input">
-                    <textarea class="formulario__textarea" name="consulta" id="consulta" cols="50" rows="10"
-                    placeholder="Escriba aquí el motivo de su consulta y nos comunicaremos con usted a la brevedad."></textarea>
-                     <input type="textarea" class="formulario__input" name="consulta" id="consulta" > -->
-                    <!-- <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">La consulta debe tener entre 5 y 400 caracteres.</p>
-                
-        </div> -->
-
-        <!--Grupo: Mensaje Error-->
-        <!-- <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor complete el formulario de contacto correctamente. </p>
-        </div>
-        <br> -->
-        <!--Grupo: Boton Enviar-->
-        <!-- <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="formulario__btn" name="enviar">ENVIAR</button>
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Su consulta fue enviada exitosamente!</p>
-        </div>
-        <br><br><br>
-    </form> -->
 
     <form class="form" id="form" action="https://formspree.io/f/xoqblvlr" method="POST" enctype="multipart/form-data">
         <!-- Nombre -->
         <div class="formulario__grupo" id="grupo__nombre">
-        <label for="nombre" class="formulario__label">
-            Nombre y Apellido <br>
+            <label for="nombre" class="formulario__label">Nombre y Apellido <br></label>
             <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre Apellido">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">El nombre sólo puede contener letras y espacios</p>
-        </label>
         </div>
     
         <!-- Correo Electrónico -->
         <div class="formulario__grupo" id="grupo__correo">
-        <label for="correo" class="formulario__label">
-            Correo electrónico <br>
+            <label for="correo" class="formulario__label">Correo Electrónico <br></label>
             <div class="formulario__grupo-input">
                 <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
-            <p class="formulario__input-error">El correo electrónico sólo puede contener letras, números, puntos, guiones y guión bajo.</p>
-        </label>
+            <p class="formulario__input-error">El correo electrónico sólo puede contener letras, números, puntos, guiones y guión bajo.</p>        
         </div>
 
         <!-- Teléfono-->
         <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">
-                Teléfono <br>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123132123123">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">Por favor ingrese un número de teléfono con código de área y sin espacios.</p>
-            </label>
+            <label for="telefono" class="formulario__label">Teléfono<br></label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="123132123">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Por favor ingrese un número de teléfono, mínimo 6 y máximo 16 dígitos.</p>
         </div>
 
         <!-- Obra Social -->
         <div class="formulario__grupo" id="grupo__obrasocial">
             <label for="obrasocial" class="formulario__label">Indique si cuenta con Obra Social</label>
-                <div class="formulario__grupo-input">
-                    <select name="obrasocial" id="obrasocial">
-                        <option value="Si">Si</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-            </label>
+            <div class="formulario__grupo-input">
+                <select class="formulario__obrasocial" name="obrasocial" id="obrasocial">
+                    <option value="Si">Si</option>                        
+                    <option value="No">No</option>
+                </select>
+            </div>            
         </div>
 
         <!-- Consulta -->
-
-        <div class="formulario__grupo" id="grupo__consulta">
-            <label for="consulta" class="formulario__label">
-                Indique su consulta <br>
-                <div class="formulario__grupo-input">
-                    <textarea class="formulario__textarea" name="consulta" id="consulta" cols="50" rows="10"
-                    placeholder="Escriba aquí el motivo de su consulta y nos comunicaremos con usted a la brevedad."></textarea>
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">La consulta debe tener entre 5 y 400 caracteres.</p>
-            </label>
+        <div class="formulario__grupo formulario__grupo-textarea" id="grupo__consulta">
+            <label for="consulta" class="formulario__label">Indique su consulta <br></label>
+            <div class="formulario__grupo-input">
+                <textarea class="formulario__input formulario__textarea" name="consulta" id="consulta" maxlength="500"
+                placeholder="En 500 caracteres o menos, escriba aquí el motivo de su consulta."></textarea>
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
         </div>
 
         <!-- Mensaje de error -->
         <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor complete el formulario de contacto correctamente. </p>
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor complete el formulario de contacto correctamente.</p>
         </div>
-
+        <br>
         <!-- Botón Enviar -->
         <div class="formulario__grupo formulario__grupo-btn-enviar">
             <button type="submit" class="formulario__btn" name="enviar">ENVIAR</button>
             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Su consulta fue enviada exitosamente!</p>
         </div>
-        <br><br><br>
+        <br>
     </form>
 
     </main>

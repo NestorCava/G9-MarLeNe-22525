@@ -441,15 +441,14 @@ nav a:hover{
 ************************CONTACTO******************************************************
 **************************************************************************************/
 
-.formulario__container {
-  background-color: rgba(147, 112, 216, 0.534);
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
-.formulario {
-	display: grid;
-	grid-template-columns: 1fr;
-  /* vertical-align: middle; nuevo */
-	gap: 20px;
+.formulario__container {
+  background-color: rgba(147, 112, 216, 0.534);
 }
 
 .formulario__label {
@@ -464,25 +463,24 @@ nav a:hover{
 }
 
 .formulario__input {
-	width:70%;
-  vertical-align: middle; /*nuevo*/
+	width:100%;
+  vertical-align: middle;
 	background: #fff;
 	border: 3px solid #db8ff2;
 	border-radius: 3px;
 	height: 45px;
 	line-height: 45px;
 	padding: 0 40px 0 10px;
-	/* transition: .3s ease all; */
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #974cae;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
 .formulario__input-error {
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 0;
 	display: none;
 }
@@ -492,21 +490,13 @@ nav a:hover{
 }
 
 .formulario__textarea {
-	width:70%;
-  height: 20%;
+	width:100%;
 	background: #fff;
 	border: 3px solid #db8ff2;
 	border-radius: 3px;
-	padding: 0 40px 0 10px;
   font-size: 15px;
+  line-height: 20px;
 }
-
-.formulario__textarea:focus {
-	border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
-}
-
 
 .formulario__validacion-estado {
 	position: absolute;
@@ -518,7 +508,9 @@ nav a:hover{
 }
 
 .formulario__mensaje,
-.formulario__grupo-btn-enviar {
+.formulario__grupo-textarea,
+.formulario__grupo-btn-enviar,
+.formulario__mensaje {
 	grid-column: span 1;
 }
 
@@ -562,13 +554,14 @@ nav a:hover{
 
 .formulario__btn:hover {
   color: indigo;
-  filter: brightness(110%);
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  filter: brightness(100%);
+	box-shadow: 3px 0px 30px rgb(30, 30, 30);
 }
 
 .formulario__mensaje-exito {
 	font-size: 20px;
   font-weight: bold;
+  padding-top: 10px;
 	color: #119200;
 	display: none;
 }
@@ -598,19 +591,12 @@ nav a:hover{
 
 
 /* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
+@media screen and (max-width: 600px) {
 
-  .formulario__input {
+  .formulario__input,
+  .formulario__textarea {
     width:100%;
   }
-
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
 
 	.formulario__btn {
 		width: 100%;
