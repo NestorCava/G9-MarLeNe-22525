@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" href="img/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title>Información</title>
 </head>
 <body class="grid-container">
+
     <header class="header">
         <a href="" class="logo">
             <img src="img/Logo1.jpg" alt="logo">
@@ -27,81 +29,131 @@
             <a href="contacto.html" class="nav-link">Contacto</a>
         </nav>
     </header>
+    
 
-    <article class="main">
-        <section>
-            <br><br>
-            <div class="indicaciones">
-                <br>
-                <h2>INDICACIONES Y PREPARACION</h2>
-                <br>
-                <img src="img/Indicaciones.jpg" alt="Indicaciones">
-                <br><br>
-                <H4>Para consultar indicaciones y preparación para los </H4>
-                <h4>distintos tipos de estudios, acceda a la siguiente guía.</h4>
-                <br>
+    <section class="informacion">
+        
+        <div class="analisis-generales">
+            
+            <p class="titulo-indicaciones">Indicaciones Generales</p>
+            <img class="infografia-general" src="img/Indicaciones.jpg" alt="Indicaciones">
+            
+            <div class="texto-indicaciones">
+
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAklJREFUWEfN10FS2zAUBuD/KQwsyw2aG9Ab1OwSNu0NEDcIN+gVeoIqN8gK2JEbND1BOUJYwgwS81yLUZQnW7aVTrz0OPanp1/SC+HILjoyD/4b6Dv0OQ9+BbNtK0JREH9U+iDff1F4ZMiZxWUbqhjoCvqLU3h0hNuHN2PCKlwpvXHARXNv04YqAvIYAPW0OMJNiJpNtCaHXwEyiSoC4il5VVgHVRiMKgLikXeh5krzNF5Hgd6rVBEQTxl/6BR4kipFDpWA8bYd1GhQkB+QxaWEiqqydIS1zxQBf04tKr/yRoHiMAPYdqCW99ZoBnLQlcMixPD9wSAB4wuRRMWrT9ogB4PmSj8B+JzYdQejBoOaCq0BfCqJ6gVqENf31twy4hCobFCYGQLMnTU3h0BlgWbQU1L47Y+GZjWUQD2fWUzDwzYLxABppw0rJZxXcbTioE/JorqD2YQPtoL8Dux/lELB4ief9GEFhaA/e0B9zADTGNO6D8U7cBsqo+v8wHQ9K1YotQMPRGVjxApJAW5GVWfAo2akV0T41jHiXhgRlGgTdo6FugnrkZmuaWoNddRuSu/yTXrdHSau3pXx79nLUEeFcgY7GCNn6ERXZP/9QxhwjcIkl/18otdw+NoTNBqTBDUr7W8PUBFMukJyQ148wNILx4a6WGXEVSassKWz+EETGCFTxTE7U9bkhk9e3wF+NOT84OxEV3jDghTOncUWDosHGG5ji147UxZ0gCv/76Do1zJetpchrtQhRp5hqR/JbtByXzj2uaMDvQMAD3E0+m6mbQAAAABJRU5ErkJggg=="/>
+                    <strong>Extracciones: </strong>De Lunes a Viernes a partir de las 8 hs
+                </p>
+
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAklJREFUWEfN10FS2zAUBuD/KQwsyw2aG9Ab1OwSNu0NEDcIN+gVeoIqN8gK2JEbND1BOUJYwgwS81yLUZQnW7aVTrz0OPanp1/SC+HILjoyD/4b6Dv0OQ9+BbNtK0JREH9U+iDff1F4ZMiZxWUbqhjoCvqLU3h0hNuHN2PCKlwpvXHARXNv04YqAvIYAPW0OMJNiJpNtCaHXwEyiSoC4il5VVgHVRiMKgLikXeh5krzNF5Hgd6rVBEQTxl/6BR4kipFDpWA8bYd1GhQkB+QxaWEiqqydIS1zxQBf04tKr/yRoHiMAPYdqCW99ZoBnLQlcMixPD9wSAB4wuRRMWrT9ogB4PmSj8B+JzYdQejBoOaCq0BfCqJ6gVqENf31twy4hCobFCYGQLMnTU3h0BlgWbQU1L47Y+GZjWUQD2fWUzDwzYLxABppw0rJZxXcbTioE/JorqD2YQPtoL8Dux/lELB4ief9GEFhaA/e0B9zADTGNO6D8U7cBsqo+v8wHQ9K1YotQMPRGVjxApJAW5GVWfAo2akV0T41jHiXhgRlGgTdo6FugnrkZmuaWoNddRuSu/yTXrdHSau3pXx79nLUEeFcgY7GCNn6ERXZP/9QxhwjcIkl/18otdw+NoTNBqTBDUr7W8PUBFMukJyQ148wNILx4a6WGXEVSassKWz+EETGCFTxTE7U9bkhk9e3wF+NOT84OxEV3jDghTOncUWDosHGG5ji147UxZ0gCv/76Do1zJetpchrtQhRp5hqR/JbtByXzj2uaMDvQMAD3E0+m6mbQAAAABJRU5ErkJggg=="/>
+                    <strong>Ayuno: </strong>En adultos 12 hs si el pedido médico incluye Triglicéridos, sino será de 8 hs. Pacientes
+                    pediátricos deben hacer 8 hs. En lactantes se necesitan 2hs.
+                </p>
+
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAklJREFUWEfN10FS2zAUBuD/KQwsyw2aG9Ab1OwSNu0NEDcIN+gVeoIqN8gK2JEbND1BOUJYwgwS81yLUZQnW7aVTrz0OPanp1/SC+HILjoyD/4b6Dv0OQ9+BbNtK0JREH9U+iDff1F4ZMiZxWUbqhjoCvqLU3h0hNuHN2PCKlwpvXHARXNv04YqAvIYAPW0OMJNiJpNtCaHXwEyiSoC4il5VVgHVRiMKgLikXeh5krzNF5Hgd6rVBEQTxl/6BR4kipFDpWA8bYd1GhQkB+QxaWEiqqydIS1zxQBf04tKr/yRoHiMAPYdqCW99ZoBnLQlcMixPD9wSAB4wuRRMWrT9ogB4PmSj8B+JzYdQejBoOaCq0BfCqJ6gVqENf31twy4hCobFCYGQLMnTU3h0BlgWbQU1L47Y+GZjWUQD2fWUzDwzYLxABppw0rJZxXcbTioE/JorqD2YQPtoL8Dux/lELB4ief9GEFhaA/e0B9zADTGNO6D8U7cBsqo+v8wHQ9K1YotQMPRGVjxApJAW5GVWfAo2akV0T41jHiXhgRlGgTdo6FugnrkZmuaWoNddRuSu/yTXrdHSau3pXx79nLUEeFcgY7GCNn6ERXZP/9QxhwjcIkl/18otdw+NoTNBqTBDUr7W8PUBFMukJyQ148wNILx4a6WGXEVSassKWz+EETGCFTxTE7U9bkhk9e3wF+NOT84OxEV3jDghTOncUWDosHGG5ji147UxZ0gCv/76Do1zJetpchrtQhRp5hqR/JbtByXzj2uaMDvQMAD3E0+m6mbQAAAABJRU5ErkJggg=="/>
+                    <strong>Puede beber Agua </strong> (NO té, NI café, NI mate, NI jugos).
+                </p>
+
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAklJREFUWEfN10FS2zAUBuD/KQwsyw2aG9Ab1OwSNu0NEDcIN+gVeoIqN8gK2JEbND1BOUJYwgwS81yLUZQnW7aVTrz0OPanp1/SC+HILjoyD/4b6Dv0OQ9+BbNtK0JREH9U+iDff1F4ZMiZxWUbqhjoCvqLU3h0hNuHN2PCKlwpvXHARXNv04YqAvIYAPW0OMJNiJpNtCaHXwEyiSoC4il5VVgHVRiMKgLikXeh5krzNF5Hgd6rVBEQTxl/6BR4kipFDpWA8bYd1GhQkB+QxaWEiqqydIS1zxQBf04tKr/yRoHiMAPYdqCW99ZoBnLQlcMixPD9wSAB4wuRRMWrT9ogB4PmSj8B+JzYdQejBoOaCq0BfCqJ6gVqENf31twy4hCobFCYGQLMnTU3h0BlgWbQU1L47Y+GZjWUQD2fWUzDwzYLxABppw0rJZxXcbTioE/JorqD2YQPtoL8Dux/lELB4ief9GEFhaA/e0B9zADTGNO6D8U7cBsqo+v8wHQ9K1YotQMPRGVjxApJAW5GVWfAo2akV0T41jHiXhgRlGgTdo6FugnrkZmuaWoNddRuSu/yTXrdHSau3pXx79nLUEeFcgY7GCNn6ERXZP/9QxhwjcIkl/18otdw+NoTNBqTBDUr7W8PUBFMukJyQ148wNILx4a6WGXEVSassKWz+EETGCFTxTE7U9bkhk9e3wF+NOT84OxEV3jDghTOncUWDosHGG5ji147UxZ0gCv/76Do1zJetpchrtQhRp5hqR/JbtByXzj2uaMDvQMAD3E0+m6mbQAAAABJRU5ErkJggg=="/>
+                    NO consumir chicles, caramelos o pastillas.
+                </p>
+
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAklJREFUWEfN10FS2zAUBuD/KQwsyw2aG9Ab1OwSNu0NEDcIN+gVeoIqN8gK2JEbND1BOUJYwgwS81yLUZQnW7aVTrz0OPanp1/SC+HILjoyD/4b6Dv0OQ9+BbNtK0JREH9U+iDff1F4ZMiZxWUbqhjoCvqLU3h0hNuHN2PCKlwpvXHARXNv04YqAvIYAPW0OMJNiJpNtCaHXwEyiSoC4il5VVgHVRiMKgLikXeh5krzNF5Hgd6rVBEQTxl/6BR4kipFDpWA8bYd1GhQkB+QxaWEiqqydIS1zxQBf04tKr/yRoHiMAPYdqCW99ZoBnLQlcMixPD9wSAB4wuRRMWrT9ogB4PmSj8B+JzYdQejBoOaCq0BfCqJ6gVqENf31twy4hCobFCYGQLMnTU3h0BlgWbQU1L47Y+GZjWUQD2fWUzDwzYLxABppw0rJZxXcbTioE/JorqD2YQPtoL8Dux/lELB4ief9GEFhaA/e0B9zADTGNO6D8U7cBsqo+v8wHQ9K1YotQMPRGVjxApJAW5GVWfAo2akV0T41jHiXhgRlGgTdo6FugnrkZmuaWoNddRuSu/yTXrdHSau3pXx79nLUEeFcgY7GCNn6ERXZP/9QxhwjcIkl/18otdw+NoTNBqTBDUr7W8PUBFMukJyQ148wNILx4a6WGXEVSassKWz+EETGCFTxTE7U9bkhk9e3wF+NOT84OxEV3jDghTOncUWDosHGG5ji147UxZ0gCv/76Do1zJetpchrtQhRp5hqR/JbtByXzj2uaMDvQMAD3E0+m6mbQAAAABJRU5ErkJggg=="/>
+                    NO fumar NI realizar ejercicios físicos. 
+                </p>
+      
+            </div>
+
+            <div class="otros-indicaciones">
+                <p>
+                    Indicaciones y preparación para los distintos tipos de estudios:
+                </p>
+            
                 <a class="button" href="https://www.yumpu.com/es/document/read/29465953/analisis-de-laboratorio-indicaciones-para-toma-de-muestra-osecac" target="_blank">INDICACIONES</a>
-                <br><br><br><br><br>
             </div>
-            <div class="COVID-19">
-                <br>
-                <H2>PRUEBAS PARA COVID-19</H2>
-                <br>
-                <img src="img/COVID.jpg" alt="COVID-19">
+        </div>
+        <br><br><br>
+        <div class="COVID-19">
+            <p class="titulo-indicaciones">Pruebas Para COVID-19</p>
+
+            <img class="icono-covid" src="img/COVID.jpg" alt="COVID-19">
+            
+            <div class="texto-indicaciones">
+                
+
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    PCR para COVID-19 (Hisopado)
+                </p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    Test rápido de Antígeno (Hisopado)
+                </p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    Cuantificación de Anticuerpos (Serología)
+                </p>
+                <p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAArdJREFUWEfdWEGWEjEQ/RV84E48gcwJnBsIO3AzeILJDRxP4HgC9QSGG7Qbe3biCcQTiCcQdjrPSc0r6OaF0On0dPd78MwOklT9/Kr6VUA4sUUnhgf/H6Ax9IAUvgrTbDG6gVk2Yb0xQy+VvmbgrYAg4N0Xa66PCmiitAFwmYGYpdboowGaQvf/KvwE0M9ArHoWZwnMqi6o0pBNlP4A4DUBpmvxxnWUgZHcOfecL3oWI//srcJ7BoS9j6k1VyHAMUDsXFwyYBTRgpmH2BrPmfHtC0OGgKUF+rQ9O8gPpVa2ilcMkJsfdaPg36vPUBYWKeMnLaH5lVqzY6rIZrTs8zxqA1AVWYgCcnUmAmoNgk7vTCLnJh09BUNCvmO3FUCezoQxEV7lYPJD447WxPjkXCrNn0xcwz6ytvC9pJp2l4sqJ8vB346HqE4FQ1aiM4UvqAhI7h7olGtwD5AwAoVLYgxBEK3ZW8z4TATRmOlB5VULWW5vRUBigSUsZm5D3gM0UVpK/FkgiLs+NSadEOHCO7ciIt2942/y/Z8OXRCzKH1IPPPry9Sas/xDm4DqKsOeNh2ETClolnAxXvgMgDGXkGU9qS4AubcGkGxai4UJhsz1IEl9qzBn4HkTz/5dAn50LYahiaBUGLOyX1RtHeIs8oB1z2JQNp5ElbqqMLLC6OafmY8f6SHZ7UhbsJoJoxis2jp6Fk/l5RmrMrQdrLZax2ZIi+WRDHEgStiyBm10qn1ABSNqDFdsf09zAqDDNqrmTwyFt19/QJsovRthpYJEO5iwgLSW7VgaGtxEZwwrJGRxLiOsW31NRtg8f2Y9i6uCwf1Ap6TfPWZov7QdtuszVCUULouiwDGdidmM6lDMgNdoj/tD0depKjoTe2BzhrZ/NszFEVsMj/5nQ+zFD91vzNBDHcbOnxyge2atMTQArW3GAAAAAElFTkSuQmCC"/>
+                    Turnos al WhatsApp +54 9 351-6542362
+                </p>
                 <br><br>
-                <H4>PCR para COVID-19 (Hisopado)</H4>
-                <h4>Test rápido de Antígeno (Hisopado)</h4>
-                <h4>Cuantificación de Anticuerpos (Serología)</h4>
-                <h4>Turnos al WhatsApp +54 9 351-6542362</h4>
-                <br><br><br><br><br>
             </div>
-            <div class="infografia">
-                <img src="img/Testeate-COVID-19-Que-test-me-tengo-que-hacer-modified.jpg" alt="Qué test hacer">
-                <br><br><br>
-                <img src="img/Testeate-COVID-19-Tengo-el-resultado-que-hago-modified.jpg" alt="Tengo el resultado">
-                <br><br><br>
+            
+            <div  class="infografia-covid-1">
+                <img src="img/Testeate-COVID-19-Que-test-me-tengo-que-hacer.jpg" alt="Qué test hacer">
             </div>
-            <div class="obras-sociales">
+            
+            <div class="infografia-covid-2">
+                <img src="img/Testeate-COVID-19-Tengo-el-resultado-que-hago.jpg" alt="Tengo el resultado">
+            </div>
+        </div>
+        <br>
+        <div class="obras-sociales">
+            <h2>OBRAS SOCIALES</h2>
+            <br>
+            <H4>Brindamos atención a una amplia variedad de Obras Sociales,</H4>
+            <h4>entre ellas las que se destacan en el siguiente listado.</h4>
+            <h4>Si su Obra Social no figura en esta lista parcial, </h4>
+            <h4>por favor póngase en contacto con nosotros para</h4>
+            <h4>consultar si hay convenio vigente para su atención.</h4>
+            <br>
+            <h4><ul>
+                <li>APROSS</li>
+                <li>Avalian (ex ACA Salud)</li>
+                <li>Boreal</li>
+                <li>Caja de Abogados</li>
+                <li>Caja Notarial</li>
+                <li>Cooperativa Horizonte</li>
+                <li>CPCE</li>
+                <li>DASPU</li>
+                <li>DASUTEN</li>
+                <li>Federada Salud</li>
+                <li>IOSFA (ex IOSE)</li>
+                <li>MEDIFE</li>
+                <li>OSDOP/SADOP</li>
+                <li>OSPAT</li>
+                <li>OSPE</li>
+                <li>OSUOMRA (UOM)</li>
+                <li>PAMI</li>
+                <li>PFA</li>
+                <li>Prensa</li>
+                <li>Prevención Salud</li>
+                <li>Sancor Salud</li>
+                <li>Swiss Medical</li>
                 <br><br>
-                <h2>OBRAS SOCIALES</h2>
-                <br>
-                <H4>Brindamos atención a una amplia variedad de Obras Sociales,</H4>
-                <h4>entre ellas las que se destacan en el siguiente listado.</h4>
-                <h4>Si su Obra Social no figura en esta lista parcial, </h4>
-                <h4>por favor póngase en contacto con nosotros para</h4>
-                <h4>consultar si hay convenio vigente para su atención.</h4>
-                <br>
-                <h4><ul>
-                    <li>APROSS</li>
-                    <li>Avalian (ex ACA Salud)</li>
-                    <li>Boreal</li>
-                    <li>Caja de Abogados</li>
-                    <li>Caja Notarial</li>
-                    <li>Cooperativa Horizonte</li>
-                    <li>CPCE</li>
-                    <li>DASPU</li>
-                    <li>DASUTEN</li>
-                    <li>Federada Salud</li>
-                    <li>IOSFA (ex IOSE)</li>
-                    <li>MEDIFE</li>
-                    <li>OSDOP/SADOP</li>
-                    <li>OSPAT</li>
-                    <li>OSPE</li>
-                    <li>OSUOMRA (UOM)</li>
-                    <li>PAMI</li>
-                    <li>PFA</li>
-                    <li>Prensa</li>
-                    <li>Prevención Salud</li>
-                    <li>Sancor Salud</li>
-                    <li>Swiss Medical</li>
-                    <br><br>
-                </ul></h4>
-            </div>
-            <br><br><br><br><br>
-        </section>
-    </article>
+            </ul></h4>
+        </div>
+        <br><br><br>
+    </section>
    
+
     <footer class="footer">
+
         <div class="icono-institucion">
             <a href="" class="logo">
                 <img src="img/Logo1.jpg" alt="Logo">
@@ -147,6 +199,8 @@
             <p class="text-footer">Horarios de Extracciones: Lunes a Viernes de 8 a 10 hs.</p>
             <p class="text-footer">(Estudios con Estímulo: hasta las 8:30 hs.)</p>
         </div>
+        <br>
     </footer>
+    
 </body>
 </html>
