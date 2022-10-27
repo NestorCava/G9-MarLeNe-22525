@@ -245,16 +245,27 @@ nav a:hover{
 /************************INICIO************************/
 /******************************************************/
 
+.main{
+  grid-auto-columns: minmax(35rem, 1fr);
+  grid-template-rows: repeat(auto-fill), minmax(15rem, 1fr);
+}
+
 .logo-main{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 15.6rem;
-  width: 50.4rem;
+  height: 15.3rem;
+  width: 60%;
   border: 2px solid rgb(57, 43, 83);
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
   margin: auto;
+  margin-top: 50px;
+}
+
+.logo-main img{
+  height: 100%;
+  width: 100%;
 }
 
 .lab h1{
@@ -265,6 +276,20 @@ nav a:hover{
 
 .lab ul{
   list-style: none;
+}
+
+@media (max-width: 600px){
+
+  .logo-main { 
+    height: 15.3rem;
+    width: 100%;
+  }
+
+  .logo-main img{ 
+    height: 100%;
+    width: 100%;
+  }
+
 }
 
 
