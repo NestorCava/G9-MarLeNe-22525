@@ -1,39 +1,34 @@
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
-
+const form = document.getElementById('form');
+const inputs = document.querySelectorAll('#form input');
 const expresiones = {
-	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,16}$/, // 7 a 14 numeros.
-	consulta: /^.{5,400}$/ // 5 a 400 caracteres.
-}
+		nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+		correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+		telefono: /^\d{6,16}$/, // 6 a 16 numeros.
+	}
 
 const campos = {
 	nombre: false,
 	correo: false,
-	telefono: false,
-	consulta: false
+	telefono: false
 }
 
-const validarFormulario = (e) => {
-	switch (e.target.name) {
+const validarFormulario = (event) => {
+	switch (event.target.name) {
 		case "nombre":
-			validarCampo(expresiones.nombre, e.target, 'nombre');
+			validarCampo(expresiones.nombre, event.target, 'nombre');
 		break;
 		case "correo":
-			validarCampo(expresiones.correo, e.target, 'correo');
+			validarCampo(expresiones.correo, event.target, 'correo');			
 		break;
 		case "telefono":
-			validarCampo(expresiones.telefono, e.target, 'telefono');
+			validarCampo(expresiones.telefono, event.target, 'telefono');
 		break;
-		case "consulta":
-			validarCampo(expresiones.consulta, e.target, 'consulta');
-		break;
+		
 	}
 }
 
 const validarCampo = (expresion, input, campo) => {
-	if(expresion.test(input.value)){
+	if(expresion.test(input.value)) {
 		document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
 		document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
 		document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
@@ -50,27 +45,38 @@ const validarCampo = (expresion, input, campo) => {
 	}
 }
 
+
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
-	input.addEventListener('blur', validarFormulario);
-});
+})
 
-formulario.addEventListener('submit', (e) => {
-	//e.preventDefault();
+form.addEventListener('submit', handleSubmit);
 
-	if(campos.nombre && campos.correo && campos.telefono){
-		formulario.reset();
 
+async function handleSubmit(event) {
+	event.preventDefault();
+	if(campos.nombre && campos.correo && campos.telefono) {
+	const form = new FormData(this);
+	await fetch(this.action, {
+		method: this.method,
+		body: form,
+		headers: {
+			'Accept': 'application/json'
+		}
+	})
+
+		this.reset();
+		document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 5000);
 
 		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
+			icono.classList.remove('formulario__grupo-correcto')
 		});
-		document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo')
+		
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
-});
+}
