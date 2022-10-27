@@ -247,7 +247,7 @@ nav a:hover{
     /* grid-auto-flow: dense; */
     /* grid-row: span; */
     /* row-gap: 10px; */
-  }
+}
 
 @media (max-width: 600px){
 
@@ -265,13 +265,12 @@ nav a:hover{
   }
 
   .logo-main img{ 
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
+    /* object-fit: contain; */
+    max-height: 100%;
+    max-width: 100%;
   }
 
 }
-
 
 .logo-main{
   display: flex;
